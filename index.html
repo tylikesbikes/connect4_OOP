@@ -1,0 +1,36 @@
+<!doctype html>
+<head>
+  <title>Connect 4</title>
+  <link href="connect4.css" rel="stylesheet">
+</head>
+<body>
+
+  <div id="settings">
+    <p><label>
+      Enter Player 1 Color:
+      <input type="text" id = "p1color" default="red">
+    </label>
+    </p>
+    <p><label>
+      Enter Player 2 Color:
+      <input type="text" id = "p2color" default="blue">
+    </label>
+    </p>
+    <p><label>Select Human or computer for player 2:
+    <select id="p2type" name="player2Type">
+      <option value="human">Human</option>
+      <option value="computer">Computer</option>
+    </select>
+    </label>
+    </p>
+    <button id="startBtn">Start / Restart</button>
+  </div>
+
+<div id="game">
+  <table id="board"></table>
+</div>
+
+<script src="connect4.js"></script>
+
+</body>
+</html>
